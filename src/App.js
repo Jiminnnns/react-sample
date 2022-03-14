@@ -1,7 +1,9 @@
 import React from 'react'
-import Header from './Header'
-import Layout from './Layout'
-import ClickCounter from './ClickCounter'
+// import ClickCounter from './ClickCounter'
+import Card1 from './Card1'
+import Card2 from './Card2'
+import Card3 from './Card3'
+import Card4 from './Card4'
 
 export default class App extends React.Component{
 //   <Layout>
@@ -11,7 +13,11 @@ export default class App extends React.Component{
   render() {
     return (
       <>
-        <ClickCounter />
+        <Card1 title="CSS">CSS Style로 작성</Card1>
+        <Card2 title="SCSS">SCSS Style로 작성</Card2>
+        <Card3 title="CSS Module">CSS Module로 작성</Card3>
+        <Card4 title="CSS in JS">CSS in JS로 작성</Card4>
+        {/* <ClickCounter /> */}
       </>
     )
   }
